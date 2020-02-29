@@ -1,16 +1,14 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import { border, shadow } from 'styled-system';
+import baseSystem from './base-system';
 
-const Box = ({ children, ...rest }) => {
-  return <div {...rest}>{children}</div>;
-};
+const Box = styled.div`
+  ${baseSystem}
+  ${border}
+  ${shadow}
+`;
 
-Box.propTypes = {
-  children: PropTypes.node
-};
-
-Box.defaultProps = {
-  children: null
-};
+Box.displayName = 'Box';
 
 export default Box;
