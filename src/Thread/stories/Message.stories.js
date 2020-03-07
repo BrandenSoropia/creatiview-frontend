@@ -1,6 +1,6 @@
 import Message from '../Message.svelte';
 
-export default { title: 'Message' };
+export default { title: 'Thread/Message' };
 
 const commonProps = {
   user: {
