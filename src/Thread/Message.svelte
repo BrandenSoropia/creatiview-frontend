@@ -8,10 +8,14 @@
   p {
     font-size: 16px;
     line-height: 1.25;
+    margin-bottom: 4px;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
   }
 
   .created-by-name {
-    font-size: 20px;
     font-weight: bold;
   }
 
