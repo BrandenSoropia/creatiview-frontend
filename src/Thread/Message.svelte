@@ -1,6 +1,6 @@
 <script>
   export let text = '';
-  export let user = {};
+  export let writtenBy = '';
   export let dateCreated = '';
 </script>
 
@@ -15,7 +15,7 @@
     margin-bottom: 0;
   }
 
-  .created-by-name {
+  .written-by-name {
     font-weight: bold;
   }
 
@@ -25,7 +25,7 @@
 </style>
 
 <div>
-  <p class="created-by-name">{user.name}</p>
+  <p class="written-by-name">{writtenBy}</p>
   <p class="message">{text}</p>
   <p class="date-created">{new Date(dateCreated).toLocaleString()}</p>
 </div>

@@ -2,15 +2,15 @@
   import isEmpty from 'lodash/isEmpty';
   import { ENTER_KEY_CODE } from '../common';
   let value = '';
-  let errors = {};
-  let isSubmitDisabled = true;
+  export let errors = {}; // exported for testing error state
+  export let isSubmitDisabled = true; // exported for testing disabled state
 
   export let handleSubmit = () => {};
   function validate(e) {
     if (!e.target.value) {
       errors = {
         ...errors,
-        message: 'Please provide a message.'
+        message: true
       };
       isSubmitDisabled = true;
     } else {
@@ -35,6 +35,11 @@
     margin-bottom: 40px;
     height: 100%;
     width: 100%;
+    resize: vertical;
+    /* fit to container's width */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
   }
 
   textarea.error {
@@ -53,7 +58,7 @@
   p.error-message {
     position: absolute;
     left: 0;
-    top: 44px;
+    bottom: 8px;
     color: red;
   }
 
@@ -91,7 +96,7 @@
       bind:value
       id="message" />
     {#if errors.message}
-      <p class="error-message">{errors.message}</p>
+      <p class="error-message">Please provide a message.</p>
     {/if}
   </div>
 

@@ -3,20 +3,11 @@ import Message from '../Message.svelte';
 export default { title: 'Thread/Message' };
 
 const commonProps = {
-  user: {
-    name: 'Sandra'
-  },
+  writtenBy: 'Sandra',
   dateCreated: '2020-03-07T18:58:20.234Z'
 };
-export const withText = () => ({
-  Component: Message,
-  props: {
-    ...commonProps,
-    text: 'some text'
-  }
-});
 
-export const withLongText = () => ({
+export const withText = () => ({
   Component: Message,
   props: {
     ...commonProps,
