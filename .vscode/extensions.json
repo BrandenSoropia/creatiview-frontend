@@ -8,7 +8,8 @@
     "mgmcdermott.vscode-language-babel",
     "alefragnani.project-manager",
     "streetsidesoftware.code-spell-checker",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "jamesbirtles.svelte-vscode"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []

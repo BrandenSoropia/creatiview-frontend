@@ -10,10 +10,11 @@ export const rendersDefaultSmallIcon = () => ({
   }
 });
 
-export const rendersScaledIcon = () => ({
+export const rendersCustomStyledIcon = () => ({
   Component: FontAwesomeIcon,
   props: {
     data: faThumbsUp,
-    scale: 3
+    scale: 3,
+    style: 'fill: red;'
   }
 });
