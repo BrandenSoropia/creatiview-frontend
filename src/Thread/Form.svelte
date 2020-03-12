@@ -26,11 +26,13 @@
     flex-direction: column;
   }
 
-  form label {
+  label {
+    font-size: 16px;
     margin-bottom: 8px;
   }
 
   textarea {
+    font-size: 16px;
     border-radius: 3px;
     margin-bottom: 40px;
     height: 100%;
@@ -81,6 +83,7 @@
   <label for="message">Message</label>
   <div class="error-container" class:error={errors.message}>
     <textarea
+      autofocus
       on:keydown={e => {
         const isOnlyEnterPressed = !e.shiftKey && [e.keyCode, e.which].includes(ENTER_KEY_CODE);
         if (isOnlyEnterPressed) {

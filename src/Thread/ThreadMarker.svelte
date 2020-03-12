@@ -14,6 +14,7 @@
     cursor: pointer;
     height: 40px;
     width: 32px;
+    z-index: 1;
   }
 </style>
 
