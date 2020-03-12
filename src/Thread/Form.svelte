@@ -83,7 +83,6 @@
   <label for="message">Message</label>
   <div class="error-container" class:error={errors.message}>
     <textarea
-      autofocus
       on:keydown={e => {
         const isOnlyEnterPressed = !e.shiftKey && [e.keyCode, e.which].includes(ENTER_KEY_CODE);
         if (isOnlyEnterPressed) {
