@@ -27,5 +27,6 @@
         {...message}
         writtenBy={`${message.user.firstName} ${message.user.lastName}`} />
     {/each}
+    <Form handleSubmit={handleSetMessage} />
   {/if}
 </div>

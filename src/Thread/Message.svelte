@@ -6,11 +6,15 @@
 
 <style>
   .message-container {
-    margin-bottom: 16px;
+    margin-top: 16px;
   }
 
-  :global(.message-container:last-of-type) {
-    margin-bottom: 0;
+  .message-container:first-of-type {
+    margin-top: 0;
+  }
+
+  .message-container:last-of-type {
+    margin-bottom: 16px;
   }
 
   p {
