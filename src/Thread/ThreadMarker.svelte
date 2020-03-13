@@ -22,6 +22,7 @@
 </style>
 
 <div
+  tabindex="0"
   role="button"
   class="thread-marker"
   class:subdued
