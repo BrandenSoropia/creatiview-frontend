@@ -30,7 +30,6 @@
   img {
     max-width: 100%;
     max-height: 100%;
-    pointer-events: none;
     /* disable highlighting on image double click */
     -khtml-user-select: none;
     -o-user-select: none;
@@ -40,10 +39,12 @@
   }
 </style>
 
-<div
-  class="board-container"
-  on:click|preventDefault={placeThreadMarkerWithinClickedElement}>
-  <img src={imageSrc} {alt} />
+<div class="board-container">
+  <img
+    draggable="false"
+    src={imageSrc}
+    {alt}
+    on:click|preventDefault={placeThreadMarkerWithinClickedElement} />
   <!-- TODO: Use a better, more consistent ID system for these! -->
   {#each threadMarkers as threadMarker (threadMarker.tempId)}
     <ThreadMarker
