@@ -4,12 +4,17 @@ import MediumImage from '../../../public/images/medium-sample.png';
 import SmallImage from '../../../public/images/small-sample.png';
 export default { title: 'Board' };
 
+const mockOnThreadMarkerClick = () => {
+  alert('### thread marker clicked!');
+};
+
 export const fitsLargeRectangularImage = () => ({
   Component: Board,
   props: {
     imageSrc: LargeRectangularImage,
     alt:
-      'Temperate forest pen work with boulders in foreground and a variety of trees spreading from mid to background.'
+      'Temperate forest pen work with boulders in foreground and a variety of trees spreading from mid to background.',
+    onThreadMarkerClick: mockOnThreadMarkerClick
   }
 });
 
@@ -18,7 +23,8 @@ export const fitsMediumImage = () => ({
   props: {
     imageSrc: MediumImage,
     alt:
-      'Temperate forest pen work with boulders in foreground and a variety of trees spreading from mid to background.'
+      'Pencil line work of a bear sitting on its hind legs on a rocky outcrop.',
+    onThreadMarkerClick: mockOnThreadMarkerClick
   }
 });
 
@@ -27,6 +33,7 @@ export const fitsSmallImage = () => ({
   props: {
     imageSrc: SmallImage,
     alt:
-      'Pencil line work of a bear sitting on its hind legs on a rocky outcrop.'
+      'Pencil line work of a bear sitting on its hind legs on a rocky outcrop.',
+    onThreadMarkerClick: mockOnThreadMarkerClick
   }
 });

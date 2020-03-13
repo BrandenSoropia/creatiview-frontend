@@ -1,8 +1,10 @@
 <script>
   import FontAwesomeIcon from '../common/components/FontAwesomeIcon';
-  import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+  import { faCommentAlt } from '@fortawesome/free-solid-svg-icons';
   export let handleClick = () => {};
   export let subdued = false;
+  export let posX = 0;
+  export let posY = 0;
 
   const baseStyles = 'width: 32px; height: 40px;';
   const activeStyles = baseStyles + 'fill: red;';
@@ -11,6 +13,7 @@
 
 <style>
   .thread-marker {
+    position: absolute;
     cursor: pointer;
     height: 40px;
     width: 32px;
@@ -18,14 +21,14 @@
   }
 </style>
 
-<!-- TODO: Create container component for creating threads on click -->
 <div
   role="button"
   class="thread-marker"
   class:subdued
-  on:click|preventDefault={handleClick}>
+  style="top: {posY}px; left: {posX}px;"
+  on:click|preventDefault|stopPropagation={handleClick}>
   <FontAwesomeIcon
     tabindex="0"
-    data={faMapMarkerAlt}
+    data={faCommentAlt}
     style={subdued ? subduedStyles : activeStyles} />
 </div>
