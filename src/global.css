@@ -1,37 +1,46 @@
 /* Attempt at defining themes using CSS variables */
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+
 :root {
   /* Colors */
   --white: #ffffff;
-  --darkGray: #444444;
-  --light-pink: rgba(211, 188, 192, 1);
-  --light-fuchsia: rgba(165, 102, 139, 1);
-  --dark-fuchsia: rgba(105, 48, 109, 1);
-  --dark-purple: rgba(14, 16, 61, 1);
+  --dark-gray: #444444;
+  --dark-fuchsia: #69306d;
+  --off-black: #292826;
+  --mustard: #f9d342;
 
   /* Backgrounds */
   --background-white: var(--white);
-  --background-light: var(--light-pink);
-  --background-dark: var(--dark-purple);
-
-  /* Functional: highlights, icons*/
-  --functional-secondary: var(--light-fuchsia);
-  --functional-primary: var(--dark-fuchsia);
+  --background-gray: var(--dark-gray);
+  --background-dark: var(--off-black);
 
   /* Typography*/
-  --text-primary: var(--darkGray);
+  --text-primary: var(--dark-gray);
+  /* TODO: Figure out how to make a simple text component! */
+  --font-size-primary: 16px;
+  --line-height-primary: 1.5;
 
   /* Space: padding, margin. One refers to 8px */
-  --space-half: 4px;
   --space-one: 8px;
   --space-two: 16px;
   --space-three: 24px;
   --space-four: 32px;
+  --space-five: 40px;
 
   /* Borders */
   --border-width-thin: 1px;
   --border-radius-round: 3px;
 }
 
+html,
+body,
+main {
+  font-family: 'Vollkorn', serif;
+  color: var(--text-primary);
+}
+
 p {
+  font-size: var(--font-size-primary);
+  line-height: var(--line-height-primary);
   margin: 0;
 }

@@ -7,8 +7,8 @@
   export let posY = 0;
 
   const baseStyles = 'width: 32px; height: 40px;';
-  const activeStyles = baseStyles + 'fill: red;';
-  const subduedStyles = baseStyles + 'fill: gray;';
+  const activeStyles = baseStyles + 'fill: #69306D;';
+  const subduedStyles = baseStyles + 'fill: #444444;';
 </script>
 
 <style>

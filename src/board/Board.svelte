@@ -18,14 +18,17 @@
     var posX = e.clientX - rect.left; // x position within the element.
     var posY = e.clientY - rect.top; // y position within the element.
 
-    threads = [...threads, { tempId: threads.length + 1, posX, posY }];
+    threads = [
+      ...threads,
+      { tempId: threads.length + 1, posX, posY, subdued: false }
+    ];
   };
 </script>
 
 <style>
   .board-container {
     position: relative;
-    background-color: slategray;
+    background-color: var(--background-dark);
     cursor: pointer;
     height: 100%;
     width: 100%;
@@ -59,7 +62,8 @@
       <ThreadMarker
         posX={thread.posX}
         posY={thread.posY}
-        handleClick={onThreadMarkerClick} />
+        handleClick={onThreadMarkerClick}
+        subdued={thread.subdued} />
     {/each}
   </div>
 </div>

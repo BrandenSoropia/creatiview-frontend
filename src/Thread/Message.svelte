@@ -6,7 +6,7 @@
 
 <style>
   .message-container {
-    margin-top: 16px;
+    margin-top: var(--space-two);
   }
 
   .message-container:first-of-type {
@@ -14,13 +14,11 @@
   }
 
   .message-container:last-of-type {
-    margin-bottom: 16px;
+    margin-bottom: var(--space-two);
   }
 
   p {
-    font-size: 16px;
-    line-height: 1.25;
-    margin-bottom: 4px;
+    margin-bottom: var(--space-one);
   }
 
   p:last-of-type {
@@ -30,14 +28,11 @@
   .written-by-name {
     font-weight: bold;
   }
-
-  .date-created {
-    color: grey;
-  }
 </style>
 
 <div class="message-container">
-  <p class="written-by-name">{writtenBy}</p>
+  <p class="written-by-name">
+    {writtenBy} said on {new Date(dateCreated).toLocaleString()}
+  </p>
   <p class="message">{text}</p>
-  <p class="date-created">{new Date(dateCreated).toLocaleString()}</p>
 </div>

@@ -8,7 +8,7 @@ const mockOnThreadMarkerClick = () => {
   alert('### thread marker clicked!');
 };
 
-export const fitsLargeRectangularImageWithComments = () => ({
+export const noSelectedComments = () => ({
   Component: Board,
   props: {
     imageSrc: LargeRectangularImage,
@@ -16,8 +16,22 @@ export const fitsLargeRectangularImageWithComments = () => ({
       'Temperate forest pen work with boulders in foreground and a variety of trees spreading from mid to background.',
     onThreadMarkerClick: mockOnThreadMarkerClick,
     threads: [
-      { tempId: 1, posX: 200, posY: 300 },
-      { tempId: 2, posX: 450, posY: 450 }
+      { tempId: 1, posX: 200, posY: 300, subdued: false },
+      { tempId: 2, posX: 450, posY: 450, subdued: false }
+    ]
+  }
+});
+
+export const withSelectedComment = () => ({
+  Component: Board,
+  props: {
+    imageSrc: LargeRectangularImage,
+    alt:
+      'Temperate forest pen work with boulders in foreground and a variety of trees spreading from mid to background.',
+    onThreadMarkerClick: mockOnThreadMarkerClick,
+    threads: [
+      { tempId: 1, posX: 200, posY: 300, subdued: false },
+      { tempId: 2, posX: 450, posY: 450, subdued: true }
     ]
   }
 });

@@ -12,3 +12,13 @@ export const handlesFormInteractions = () => ({
     handleSubmit: mockHandleSubmit
   }
 });
+
+export const errorState = () => ({
+  Component: Form,
+  props: {
+    handleSubmit: mockHandleSubmit,
+    errors: {
+      message: true
+    }
+  }
+});

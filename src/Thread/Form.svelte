@@ -27,14 +27,12 @@
   }
 
   label {
-    font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: var(--space-one);
   }
 
   textarea {
-    font-size: 16px;
-    border-radius: 3px;
-    margin-bottom: 40px;
+    border-radius: var(--border-radius-round);
+    margin-bottom: var(--space-five);
     height: 100%;
     width: 100%;
     resize: vertical;
@@ -66,7 +64,7 @@
 
   button {
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: var(--space-one);
   }
 
   button:disabled {
@@ -94,7 +92,7 @@
       class:error={errors.message}
       tabindex="0"
       type="text"
-      placeholder="Begin typing here..."
+      placeholder="Jot your thoughts down here..."
       bind:value
       id="message" />
     {#if errors.message}
