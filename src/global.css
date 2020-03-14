@@ -1,3 +1,37 @@
+/* Attempt at defining themes using CSS variables */
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --darkGray: #444444;
+  --light-pink: rgba(211, 188, 192, 1);
+  --light-fuschia: rgba(165, 102, 139, 1);
+  --dark-fuschia: rgba(105, 48, 109, 1);
+  --dark-purple: rgba(14, 16, 61, 1);
+
+  /* Backgrounds */
+  --background-white: var(--white);
+  --background-light: var(--light-pink);
+  --background-dark: var(--dark-purple);
+
+  /* Functional: highlights, icons*/
+  --functional-secondary: var(--light-fuschia);
+  --functional-primary: var(--dark-fuschia);
+
+  /* Typography*/
+  --text-primary: var(--darkGray);
+
+  /* Space: padding, margin. One refers to 8px */
+  --space-half: 4px;
+  --space-one: 8px;
+  --space-two: 16px;
+  --space-three: 24px;
+  --space-four: 32px;
+
+  /* Borders */
+  --border-width-thin: 1px;
+  --border-radius-round: 3px;
+}
+
 p {
   margin: 0;
 }

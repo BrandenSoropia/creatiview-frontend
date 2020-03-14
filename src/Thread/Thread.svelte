@@ -4,17 +4,24 @@
   import Form from './Form';
 
   export let messages = [];
+  // Exposed as props for Storybook
   export let handleSetThread = () => {};
   export let handleSetMessage = () => {};
 </script>
 
 <style>
   .container {
+    background: var(--background-white);
     border-style: solid;
     border-color: black;
-    border-width: 1px;
-    border-radius: 3px;
-    padding: 8px;
+    border-width: var(--border-width-thin);
+    border-radius: var(--border-radius-round);
+    padding: var(--space-one);
+    margin-bottom: var(--space-two);
+  }
+
+  .container:last-of-type {
+    margin-bottom: 0;
   }
 </style>
 

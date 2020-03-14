@@ -1,5 +1,5 @@
 import Thread from '../Thread.svelte';
-import { messages as mockMessages } from '../__mocks__/thread-state';
+import { mockMessages } from '../__mocks__/thread-state.mock';
 
 export default { title: 'Thread' };
 
