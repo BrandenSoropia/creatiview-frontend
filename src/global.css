@@ -4,8 +4,8 @@
   --white: #ffffff;
   --darkGray: #444444;
   --light-pink: rgba(211, 188, 192, 1);
-  --light-fuschia: rgba(165, 102, 139, 1);
-  --dark-fuschia: rgba(105, 48, 109, 1);
+  --light-fuchsia: rgba(165, 102, 139, 1);
+  --dark-fuchsia: rgba(105, 48, 109, 1);
   --dark-purple: rgba(14, 16, 61, 1);
 
   /* Backgrounds */
@@ -14,8 +14,8 @@
   --background-dark: var(--dark-purple);
 
   /* Functional: highlights, icons*/
-  --functional-secondary: var(--light-fuschia);
-  --functional-primary: var(--dark-fuschia);
+  --functional-secondary: var(--light-fuchsia);
+  --functional-primary: var(--dark-fuchsia);
 
   /* Typography*/
   --text-primary: var(--darkGray);
