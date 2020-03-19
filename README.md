@@ -8,7 +8,7 @@ Stories can be found here on Trello: https://trello.com/b/XTegjaWo/creatiview
 
 > Needs yarn and node
 
-1. Clone/download repo. In termanal, move to your local copy's folder
+1. Clone/download repo. In terminal, move to your local copy's folder
 2. Run `yarn` to install dependencies.
 3. Run `yarn start` to serve app on localhost
 
