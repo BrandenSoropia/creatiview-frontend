@@ -1,6 +1,6 @@
 <script>
   import isEmpty from 'lodash/isEmpty';
-  import Thread from '../Thread/Thread';
+  import Thread from '../Thread';
 
   export let threads = [];
 </script>

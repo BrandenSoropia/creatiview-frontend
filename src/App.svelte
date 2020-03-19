@@ -1,4 +1,6 @@
 <script>
+  import Board from './Board';
+  import ThreadList from './ThreadList';
   export let name;
 </script>
 
@@ -31,4 +33,5 @@
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     to learn how to build Svelte apps.
   </p>
+  <Board />
 </main>

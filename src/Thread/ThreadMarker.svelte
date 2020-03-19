@@ -1,5 +1,5 @@
 <script>
-  import FontAwesomeIcon from '../common/components/FontAwesomeIcon';
+  import { FontAwesomeIcon } from '../common/components';
   import { faCommentAlt } from '@fortawesome/free-solid-svg-icons';
   export let handleClick = () => {};
   export let subdued = false;

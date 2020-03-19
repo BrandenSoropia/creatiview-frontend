@@ -1,6 +1,6 @@
 <script>
   import isEmpty from 'lodash/isEmpty';
-  import { ENTER_KEY_CODE } from '../common';
+  import { ENTER_KEY_CODE } from '../common/constants';
   let value = '';
   export let errors = {}; // exported for testing error state
   export let isSubmitDisabled = true; // exported for testing disabled state
