@@ -1,4 +1,4 @@
-import ThreadList from '../ThreadList';
+import ThreadList from '../ThreadList.svelte';
 import { mockThreads } from '../__mocks__/thread-list-state.mock';
 
 export default { title: 'ThreadList' };

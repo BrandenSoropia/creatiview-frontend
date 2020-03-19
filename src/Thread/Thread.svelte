@@ -1,7 +1,7 @@
 <script>
   import isEmpty from 'lodash/isEmpty';
-  import Message from './Message';
-  import Form from './Form';
+  import Message from './Message.svelte';
+  import Form from './Form.svelte';
 
   export let messages = [];
   // Exposed as props for Storybook
