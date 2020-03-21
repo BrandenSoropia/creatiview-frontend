@@ -1,37 +1,28 @@
 <script>
   import Board from './Board';
   import ThreadList from './ThreadList';
-  export let name;
 </script>
 
 <style>
   main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
+    display: flex;
   }
 
-  h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+  #board-section {
+    width: 75%;
   }
 
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
+  #thread-list-section {
+    width: 25%;
   }
 </style>
 
 <main>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-    to learn how to build Svelte apps.
-  </p>
-  <Board />
+  <div id="board-section">
+    <Board
+      imageSrc={'https://drive.google.com/uc?id=17i1_TOLIO_9AzaGAES9zs_p314RADHS7'} />
+  </div>
+  <div id="thread-list-section">
+    <ThreadList />
+  </div>
 </main>

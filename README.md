@@ -17,6 +17,14 @@ For a quick component overview, run Storybook
 
 Note: This project comes with recommended VS Code extensions that improve the development process. Give it a try if you like!
 
-## Sample Images
+## Image Upload Preparations
+
+> For now, images are self hosted only on Google at the moment!
+
+To use this app, you'll have to have:
+
+1. a Google drive account
+2. a folder within drive that is set to public
+3. the file id of the piece you'd like to upload.
 
 Provided by me. Compressed using [TinyPNG](https://tinypng.com/)

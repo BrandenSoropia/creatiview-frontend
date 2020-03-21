@@ -29,7 +29,6 @@
   style="top: {posY}px; left: {posX}px;"
   on:click|preventDefault|stopPropagation={handleClick}>
   <FontAwesomeIcon
-    tabindex="0"
     data={faCommentAlt}
     style={subdued ? subduedStyles : activeStyles} />
 </div>
