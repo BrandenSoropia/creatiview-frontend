@@ -32,9 +32,9 @@ To use this app, you'll have to have:
 ![Share button found in dropwdown](https://drive.google.com/uc?id=1ea0VtWHky4CHgrNPawrBpyhHqyRYDYN5)
 3. Click "Advanced" on the bottom right corner.
 4. Click "Change" in the "Who can access" section.
-!["Change" button in Share Settings pop up](https://drive.google.com/uc?id=1unRKpP-K0xAz4NaucDC3mu-4Hm4VL7bN)
+![Change button in Share Settings pop up](https://drive.google.com/uc?id=1unRKpP-K0xAz4NaucDC3mu-4Hm4VL7bN)
 5.Change it to "Public on the Web". By default "Can view only" should be selected and is ideal!
-!["Public on the Web" setting in the Link Sharing pop up](https://drive.google.com/uc?id=1Kr4UYLETie_KKlLSBG4U1kaJkQw5GnEM)
+![Public on the Web setting in the Link Sharing pop up](https://drive.google.com/uc?id=1Kr4UYLETie_KKlLSBG4U1kaJkQw5GnEM)
 6. Finally click "Done" to apply. 
 Now anything you put in here is accessible to the public.
 
